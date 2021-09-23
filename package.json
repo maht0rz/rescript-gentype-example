@@ -4,7 +4,8 @@
   "scripts": {
     "build": "rescript",
     "clean": "rescript clean -with-deps",
-    "start": "rescript build -w"
+    "start": "rescript build -w",
+    "gentype:check:watch": "tsc --watch --noEmit ./src/math.gen.tsx"
   },
   "keywords": [
     "rescript"
@@ -13,5 +14,9 @@
   "license": "MIT",
   "dependencies": {
     "rescript": "*"
+  },
+  "devDependencies": {
+    "gentype": "^4.2.0",
+    "typescript": "^4.4.3"
   }
 }
